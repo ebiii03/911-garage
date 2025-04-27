@@ -1,25 +1,15 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
 /**
  * copyright 2022 codewithsadee
  */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
 :root {
-
   /**
    * colors
    */
-
   --pale-purple-pantone: hsl(262, 63%, 92%);
   --medium-sea-green: hsl(152, 63%, 43%);
   --lavender-blush: hsl(336, 35%, 92%);
@@ -48,7 +38,6 @@
   /**
    * typography
    */
-
   --ff-nunito: 'Nunito', sans-serif;
   --ff-open-sans: 'Open Sans', sans-serif;
 
@@ -66,19 +55,16 @@
   /**
    * transition
    */
-
   --transition: 0.5s ease;
 
   /**
    * spacing
    */
-
   --section-padding: 50px;
 
   /**
    * radius
    */
-
   --radius-10: 10px;
   --radius-14: 14px;
   --radius-18: 18px;
@@ -86,15 +72,9 @@
   /**
    * shadow
    */
-
   --shadow-1: 3px 3px 9px hsla(240, 14%, 69%, 0.2);
   --shadow-2: 3px 3px 9px hsla(204, 92%, 59%, 0.3);
-
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
@@ -157,10 +137,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover { background: hsla(219, 14%, 60%, 0.5); }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -228,10 +204,6 @@ button, a { transition: var(--transition); }
 .h3 { font-size: var(--fs-4); }
 
 .w-100 { width: 100%; }
-
-
-
-
 
 /*-----------------------------------*\
   #HEADER
@@ -307,10 +279,10 @@ button, a { transition: var(--transition); }
   box-shadow: var(--shadow-1);
   visibility: hidden;
   transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);
- 
 }
-.header{
-  background-color: #02b5fc ;
+
+.header {
+  background-color: #02b5fc;
 }
 
 .navbar.active {
@@ -345,10 +317,6 @@ button, a { transition: var(--transition); }
   opacity: 0.7;
   pointer-events: all;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #HERO
@@ -405,10 +373,6 @@ button, a { transition: var(--transition); }
   margin: 20px;
   text-transform: uppercase;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #FEATURED CAR
@@ -564,10 +528,6 @@ button, a { transition: var(--transition); }
   --color: var(--red-salsa);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #GET START
 \*-----------------------------------*/
@@ -593,7 +553,7 @@ button, a { transition: var(--transition); }
 }
 
 .get-start-card .card-icon {
-  background: var(--icon-card-bg, var(--columnia-blue));
+  background: var(--icon-card-bg, var(--columbia-blue));
   color: var(--icon-card-color, var(--carolina-blue));
   height: 50px;
   width: 50px;
@@ -656,10 +616,6 @@ button, a { transition: var(--transition); }
 
 .get-start-card .card-link:is(:hover, :focus)::before { width: 100%; }
 
-
-
-
-
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
@@ -667,7 +623,7 @@ button, a { transition: var(--transition); }
 .blog .section-title { margin-bottom: 30px; }
 
 .blog-card {
-  background: var(--alice-blue-2);
+  background: var(--airce-blue-2);
   border-radius: var(--radius-18);
   border: 1px solid var(--white);
   box-shadow: var(--shadow-1);
@@ -751,10 +707,6 @@ button, a { transition: var(--transition); }
 
 .has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 40px); }
 
-
-
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -775,7 +727,12 @@ button, a { transition: var(--transition); }
   row-gap: 50px;
 }
 
-.footer-top .logo { margin-bottom: 20px; }
+.footer-top .logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
 
 .footer-text {
   font-size: var(--fs-6);
@@ -796,6 +753,13 @@ button, a { transition: var(--transition); }
   font-weight: var(--fw-600);
   margin-bottom: 8px;
 }
+
+#logomain img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain; /* Keeps the image nicely contained without distortion */
+}
+
 
 .footer-link {
   font-size: var(--fs-6);
@@ -832,10 +796,6 @@ button, a { transition: var(--transition); }
 
 .copyright > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -843,13 +803,10 @@ button, a { transition: var(--transition); }
 /**
  * responsive for large than 350px screen
  */
-
-@media (min-width: 350px) {
-
+@media (min-width :350px) {
   /**
    * FEATURED CAR
    */
-
   .featured-car-card .card-list { grid-template-columns: 1fr 1fr; }
 
   .featured-car-card .card-price { margin-right: auto; }
@@ -858,34 +815,23 @@ button, a { transition: var(--transition); }
     min-width: max-content;
     padding-inline: 15px;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for large than 580px screen
  */
-
 @media (min-width: 580px) {
-
   /**
    * REUSED STYLE
    */
-
   .container {
     max-width: 540px;
     margin-inline: auto;
   }
 
-
-
   /**
    * HEADER
    */
-
   .header-actions .btn span {
     display: block;
     font-weight: var(--fw-400);
@@ -893,47 +839,30 @@ button, a { transition: var(--transition); }
   }
 
   .header-actions .btn:first-of-type ion-icon { display: none; }
-
 }
-
-
-
-
 
 /**
  * responsive for large than 768px screen
  */
-
 @media (min-width: 768px) {
-
   /**
    * CUSTOM PROPERTY
    */
-
   :root {
-
     /**
      * typography
      */
-
     --fs-1: 2.625rem;
-
   }
-
-
 
   /**
    * REUSED STYLE
    */
-
   .container { max-width: 720px; }
-
-
 
   /**
    * HEADER
    */
-
   .header-actions { gap: 30px; }
 
   .header-contact {
@@ -955,12 +884,9 @@ button, a { transition: var(--transition); }
     font-size: var(--fs-7);
   }
 
-
-
   /**
    * HERO
    */
-
   .hero {
     position: relative;
     min-height: 85vh;
@@ -999,28 +925,19 @@ button, a { transition: var(--transition); }
     z-index: -1;
   }
 
-
-
   /**
    * FEATURED CAR
    */
-
   .featured-car-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
-
 
   /**
    * GET START
    */
-
   .get-start-list { grid-template-columns: 1fr 1fr; }
-
-
 
   /**
    * FOOTER
    */
-
   .footer-brand { width: 100%; }
 
   .footer-text { max-width: 400px; }
@@ -1035,95 +952,60 @@ button, a { transition: var(--transition); }
   }
 
   .social-list { margin-bottom: 0; }
-
 }
-
-
-
-
 
 /**
  * responsive for large than 992px screen
  */
-
 @media (min-width: 992px) {
-
   /**
    * REUSED STYLE
    */
-
   .container { max-width: 960px; }
-
-
 
   /**
    * HERO
    */
-
   .hero .container { width: 100%; }
-
-
 
   /**
    * BLOG
    */
-
   .blog .has-scrollbar { padding-bottom: 50px; }
 
   .blog .has-scrollbar > li { max-width: 450px; }
 
-
-
   /**
    * FOOTER
    */
-
   .footer-list:not(:last-of-type) { width: 25%; }
 
   .footer-list:last-of-type { width: 50%; }
-
 }
-
-
-
-
 
 /**
  * responsive for large than 1200px screen
  */
-
 @media (min-width: 1200px) {
-
   /**
    * CUSTOM PROPERTY
    */
-
   :root {
-
     /**
      * typography
      */
-
     --fs-1: 2.875rem;
     --fs-2: 2rem;
-
   }
-
-
 
   /**
    * REUSED STYLE
    */
-
   .container { max-width: 1170px; }
-
-
-
 
   /**
    * HEADER
    */
-
   .overlay,
   .nav-toggle-btn { display: none; }
 
@@ -1140,12 +1022,9 @@ button, a { transition: var(--transition); }
     gap: 50px;
   }
 
-
-
   /**
    * HERO
    */
-
   .hero { min-height: 100vh; }
 
   .hero-banner {
@@ -1163,39 +1042,27 @@ button, a { transition: var(--transition); }
     text-transform: uppercase;
   }
 
-
-
   /**
-   * FEATURED CAR 
+   * FEATURED CAR
    */
-
   .featured-car-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-
 
   /**
    * GET START
    */
-
   .get-start-list { grid-template-columns: repeat(4, 1fr); }
-
-
 
   /**
    * BLOG
    */
-
   .blog .has-scrollbar > li {
     max-width: 340px;
     scroll-snap-align: center;
   }
 
-
-
   /**
    * FOOTER
    */
-
   .footer-brand { width: 33.33%; }
 
   .footer-text { max-width: 35ch; }
@@ -1203,5 +1070,4 @@ button, a { transition: var(--transition); }
   .footer-list:not(:last-of-type) { width: 16.66%; }
 
   .footer-list:last-of-type { width: 33.33%; }
-
 }
